@@ -1,0 +1,71 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* 1. Colors that never change */
+@theme {
+  --color-coral: #f05f57;
+  --font-display: "Gelasio", Georgia, serif;
+  --animate-trace: trace 1.4s linear infinite;
+  @keyframes trace {
+    to {
+      stroke-dashoffset: -1;
+    }
+  }
+  --animate-marquee: marquee 30s linear infinite;
+  @keyframes marquee {
+    to {
+      transform: translateX(-50%);
+    }
+  }
+}
+
+/* 2. Colors that change between light and dark */
+@theme inline {
+  --color-page: var(--page);
+  --color-card: var(--card);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-heading: var(--heading);
+  --color-chip: var(--chip);
+  --color-chip-ink: var(--chip-ink);
+  --color-nav: var(--nav);
+
+}
+
+/* 3. The real values: light mode */
+:root {
+  --page: #d1d3d8;
+  --card: #e1e3e7;
+  --ink: #292f3b;
+  --muted: #535c6c;
+  --line: #b9bec8;
+  --heading: #243858;
+  --chip: #e4cecc;
+  --chip-ink: #823a35;
+  --nav: #c5c9d1;
+}
+/* 4. The real values: dark mode */
+.dark {
+  --page: #131a29;
+  --card: #1b2438;
+  --ink: #e3e9f5;
+  --muted: #a3aeC6;
+  --line: #2b3753;
+  --heading: #e8eefa;
+  --chip: #4a2a2b;
+  --chip-ink: #ffc9c4;
+  --nav: #1c2640;
+}
+
+/* 5. Page defaults */
+@layer base {
+  html {
+    scroll-padding-top: 5rem;
+  }
+
+  body {
+    @apply bg-page text-ink;
+  }
+}
+
