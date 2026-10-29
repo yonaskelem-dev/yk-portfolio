@@ -12,7 +12,6 @@ import Contact from "@/sections/Contact";
 import BackToTop from "@/components/BackToTop";
 import Footer from "@/sections/Footer";
 import ScrollProgress from "@/components/ScrollProgress";
-import { useScrolled } from "@/hooks/useScrolled";
 
 function App() {
   const [loading, setLoading] = useState(true);
