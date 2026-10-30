@@ -3,8 +3,10 @@ import { GithubIcon, LinkedinIcon } from "@/components/BrandIcons";
 import { profile } from "@/data/profile";
 import RevealText from "@/components/RevealText";
 import Magnetic from "@/components/Magnetic";
+import { useTypewriter } from "@/hooks/useTypewriter";
 
 function Hero() {
+  const role = useTypewriter(profile.roles);
   return (
     <section id="home" className="mx-auto max-w-[76rem] px-3 pt-6 pb-6">
       <div className="relative overflow-hidden rounded-3xl border border-line dark:bg-card/30 md:flex md:min-h-[calc(100svh-8rem)] md:items-center">
@@ -40,10 +42,11 @@ function Hero() {
           </div>
 
           <div>
-            <h1 className="font-display text-4xl text-heading xl:text-5xl">
+            <h1 className="font-display text-4xl font-bold text-heading xl:text-5xl">
               <RevealText text={`I’m ${profile.name}`} delay={2.2} />
-              <span className="block text-[#60A5FA]">
-                <RevealText text={`a ${profile.role}`} delay={2.6} />
+              <span className="block text-coral">
+                {role}
+                <span className="animate-pulse">|</span>
               </span>
             </h1>
 

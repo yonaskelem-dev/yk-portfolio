@@ -1,6 +1,6 @@
 export const profile = {
   name: "Yonas Kelem",
-  role: "Backend Developer",
+  roles: ["a Backend Developer", "a Software Developer", "an API Developer"],
   tagline:
     "I build reliable, scalable APIs with Python and FastAPI, and I'm growing into AI and machine learning.",
   email: "yonaskelem789@gmail.com",

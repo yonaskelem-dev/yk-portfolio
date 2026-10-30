@@ -35,15 +35,15 @@
 
 /* 3. The real values: light mode */
 :root {
-  --page: #d1d3d8;
-  --card: #e1e3e7;
-  --ink: #292f3b;
-  --muted: #535c6c;
-  --line: #b9bec8;
-  --heading: #243858;
-  --chip: #e4cecc;
-  --chip-ink: #823a35;
-  --nav: #c5c9d1;
+  --page: #c3cad7;
+  --card: #eceff5;
+  --ink: #1d2433;
+  --muted: #4f586b;
+  --line: #9ea9bd;
+  --heading: #14264f;
+  --chip: #f2d6d1;
+  --chip-ink: #8f2a24;
+  --nav: #d6dce6;
 }
 /* 4. The real values: dark mode */
 .dark {
@@ -68,4 +68,8 @@
     @apply bg-page text-ink;
   }
 }
-
+:root:not(.dark) .bg-card {
+  box-shadow:
+    0 2px 4px rgba(20, 38, 79, 0.18),
+    0 16px 32px -16px rgba(20, 38, 79, 0.4);
+}

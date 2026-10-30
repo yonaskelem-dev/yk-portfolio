@@ -11,8 +11,8 @@ function Navbar() {
 
   return (
     <header
-      className={`sticky top-0 z-40 border-b border-line transition-all duration-300 ${
-        scrolled ? "bg-nav/80 backdrop-blur-md" : "bg-nav"
+      className={`sticky top-0 z-40 border-b border-white/10 transition-all duration-300 ${
+        scrolled ? "bg-[#0f2a5c]/85 backdrop-blur-md" : "bg-[#0f2a5c]"
       }`}
     >
       <nav
@@ -27,7 +27,7 @@ function Navbar() {
             <li key={link.href}>
               <a
                 href={link.href}
-                className="text-ink transition hover:text-coral"
+                className="text-white/85 transition hover:text-coral"
               >
                 {link.label}
               </a>
@@ -41,7 +41,7 @@ function Navbar() {
             onClick={() => setOpen(!open)}
             aria-label="Toggle menu"
             aria-expanded={open}
-            className="grid h-12 w-12 place-items-center rounded-full border border-line bg-card text-heading md:hidden"
+            className="grid h-12 w-12 place-items-center rounded-full border border-white/25 text-white md:hidden"
           >
             {open ?
               <X size={22} />
@@ -51,13 +51,13 @@ function Navbar() {
       </nav>
 
       {open && (
-        <ul className="border-t border-line px-5 pb-4 md:hidden">
+        <ul className="border-t border-white/15 px-5 pb-4 md:hidden">
           {navLinks.map((link) => (
             <li key={link.href}>
               <a
                 href={link.href}
                 onClick={() => setOpen(false)}
-                className="block py-3 text-ink"
+                className="block py-3 text-white"
               >
                 {link.label}
               </a>

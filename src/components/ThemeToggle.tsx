@@ -8,7 +8,7 @@ function ThemeToggle() {
     <button
       onClick={toggleTheme}
       aria-label="Toggle color theme"
-      className="grid h-12 w-12 place-items-center rounded-full border border-line bg-card text-heading transition hover:rotate-12"
+      className="grid h-12 w-12 place-items-center rounded-full border border-white/25 text-white transition hover:rotate-12"
     >
       {theme === "dark" ?
         <Sun size={22} />
