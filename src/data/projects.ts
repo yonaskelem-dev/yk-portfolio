@@ -6,9 +6,10 @@ export const projects: Project[] = [
     title: "Driving school system",
     description:
       "A web app for managing students, instructors, lessons and schedules for a driving school.",
-    tags: ["JavaScript", "React", "Node.js","Express"],
+    tags: ["JavaScript", "React", "Node.js"],
     accent: "pink",
     codeUrl: "https://github.com/ShumShufer/back-end",
+    image: "/projects/driving-school.png",
   },
   {
     id: 2,

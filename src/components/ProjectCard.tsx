@@ -71,7 +71,13 @@ function ProjectCard({ project }: { project: Project }) {
       >
         {/* Front */}
         <div className="flex flex-col gap-4 rounded-2xl border border-line bg-card p-6 [backface-visibility:hidden] [grid-area:1/1] dark:bg-card/30">
-          <div className={`h-32 rounded-xl ${accents[project.accent]}`} />
+          {project.image ?
+            <img
+              src={project.image}
+              alt={`Screenshot of ${project.title}`}
+              className="h-40 w-full rounded-xl object-cover object-top"
+            />
+          : <div className={`h-40 rounded-xl ${accents[project.accent]}`} />}
           <h3 className="text-xl font-medium text-heading">{project.title}</h3>
           <div className="flex flex-wrap gap-2">
             {project.tags.map((tag) => (

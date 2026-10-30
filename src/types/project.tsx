@@ -5,4 +5,5 @@ export type Project = {
   tags: string[];
   accent: "pink" | "blue" | "green";
   codeUrl: string;
+  image?: string;
 };
