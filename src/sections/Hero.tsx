@@ -6,7 +6,7 @@ import Magnetic from "@/components/Magnetic";
 
 function Hero() {
   return (
-    <section id="home" className="mx-auto max-w-[80rem] px-3 pt-6 pb-6">
+    <section id="home" className="mx-auto max-w-[76rem] px-3 pt-6 pb-6">
       <div className="relative overflow-hidden rounded-3xl border border-line dark:bg-card/30 md:flex md:min-h-[calc(100svh-8rem)] md:items-center">
         <img
           src="/my_image.jpg"
@@ -40,9 +40,9 @@ function Hero() {
           </div>
 
           <div>
-            <h1 className="font-display text-5xl font-bold text-heading xl:text-6xl">
+            <h1 className="font-display text-4xl text-heading xl:text-5xl">
               <RevealText text={`I’m ${profile.name}`} delay={2.2} />
-              <span className="block text-coral">
+              <span className="block text-[#60A5FA]">
                 <RevealText text={`a ${profile.role}`} delay={2.6} />
               </span>
             </h1>
