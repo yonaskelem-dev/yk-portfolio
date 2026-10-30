@@ -16,7 +16,7 @@ function Navbar() {
       }`}
     >
       <nav
-        className={`mx-auto flex max-w-[90rem] items-center justify-between px-5 transition-all duration-300 ${
+        className={`mx-auto flex max-w-[85rem] items-center justify-between px-5 transition-all duration-300 ${
           scrolled ? "py-2" : "py-4"
         }`}
       >
