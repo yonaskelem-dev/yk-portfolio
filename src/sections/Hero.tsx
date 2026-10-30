@@ -6,7 +6,7 @@ import Magnetic from "@/components/Magnetic";
 
 function Hero() {
   return (
-    <section id="home" className="mx-auto max-w-[85rem] px-3 pt-6 pb-6">
+    <section id="home" className="mx-auto max-w-[80rem] px-3 pt-6 pb-6">
       <div className="relative overflow-hidden rounded-3xl border border-line dark:bg-card/30 md:flex md:min-h-[calc(100svh-8rem)] md:items-center">
         <img
           src="/my_image.jpg"

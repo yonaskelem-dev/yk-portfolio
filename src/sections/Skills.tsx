@@ -4,7 +4,7 @@ function Skills() {
   const list = [...skills, ...skills];
 
   return (
-    <section className="mx-auto max-w-[85rem] px-3 py-8">
+    <section className="mx-auto max-w-[80rem] px-3 py-8">
       <div className="overflow-hidden rounded-2xl border border-line dark:bg-card/30 py-8">
         <div className="[mask-image:linear-gradient(to_right,transparent,black_8%,black_92%,transparent)]">
           <div className="flex w-max animate-marquee hover:[animation-play-state:paused]">

@@ -20,7 +20,7 @@ const details = [
 
 function Contact() {
   return (
-    <section id="contact" className="mx-auto max-w-[85rem] px-3 py-6">
+    <section id="contact" className="mx-auto max-w-[80rem] px-3 py-6">
       <div className="grid gap-10 px-3 py-10 md:grid-cols-2">
         <div>
           <SectionTitle>Have a project or question?</SectionTitle>

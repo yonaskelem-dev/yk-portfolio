@@ -11,7 +11,7 @@ function Education() {
   });
 
   return (
-    <section id="education" className="mx-auto max-w-[85rem] px-3 py-6">
+    <section id="education" className="mx-auto max-w-[80rem] px-3 py-6">
       <div className="rounded-3xl border border-line bg-card p-8 dark:bg-card/30 md:p-12">
         <SectionTitle>Education and training</SectionTitle>
 

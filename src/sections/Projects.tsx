@@ -4,7 +4,7 @@ import { projects } from "@/data/projects";
 
 function Projects() {
   return (
-    <section id="projects" className="mx-auto max-w-[85rem] px-3 py-6">
+    <section id="projects" className="mx-auto max-w-[80rem] px-3 py-6">
       <div className="px-3 pb-6 pt-10">
         <SectionTitle>Selected projects</SectionTitle>
       </div>

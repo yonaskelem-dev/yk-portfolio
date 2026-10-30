@@ -4,7 +4,7 @@ import { services } from "@/data/services";
 
 function About() {
   return (
-    <section id="about" className="mx-auto max-w-[85rem] px-3 py-6">
+    <section id="about" className="mx-auto max-w-[80rem] px-3 py-6">
       <div className="rounded-3xl border border-line bg-page dark:bg-page/30 p-8 md:p-12">
         <SectionTitle>About me</SectionTitle>
         <p className="mt-4 max-w-3xl text-lg text-muted">{profile.about}</p>
