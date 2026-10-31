@@ -1,21 +1,92 @@
+```html
 <!doctype html>
 <html lang="en" class="dark">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Gelasio:wght@600;700&display=swap"
       rel="stylesheet"
     />
+
+    <!-- SEO -->
     <title>Yonas Kelem | Backend Developer</title>
-    <meta name="description" content="Portfolio of Yonas Kelem, a backend developer building APIs with Python and FastAPI." />
+    <meta
+      name="description"
+      content="Yonas Kelem is a Backend Developer from Addis Ababa, Ethiopia, specializing in Python, FastAPI, REST APIs, and software development."
+    />
+    <meta name="author" content="Yonas Kelem" />
+    <meta
+      name="keywords"
+      content="Yonas Kelem, Backend Developer, Python Developer, FastAPI Developer, Software Engineer, Ethiopia"
+    />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Canonical URL: replace with your main portfolio URL -->
+    <link
+      rel="canonical"
+      href="https://yk-portfolio-azure.vercel.app/"
+    />
+
+    <!-- Open Graph: Social Media Sharing -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Yonas Kelem | Backend Developer" />
+    <meta
+      property="og:description"
+      content="Explore the portfolio of Yonas Kelem, a Backend Developer specializing in Python, FastAPI, and API development."
+    />
+    <meta
+      property="og:url"
+      content="https://yk-portfolio-azure.vercel.app/"
+    />
+    <meta
+      property="og:image"
+      content="https://yk-portfolio-azure.vercel.app/og-image.png"
+    />
+
+    <!-- Twitter / X Sharing -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Yonas Kelem | Backend Developer" />
+    <meta
+      name="twitter:description"
+      content="Backend Developer specializing in Python, FastAPI, and API development."
+    />
+    <meta
+      name="twitter:image"
+      content="https://yk-portfolio-azure.vercel.app/og-image.png"
+    />
+
+    <!-- Person Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Yonas Kelem",
+        "url": "https://yk-portfolio-azure.vercel.app/",
+        "jobTitle": "Backend Developer using FastApi",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Addis Ababa",
+          "addressCountry": "ET"
+        },
+        "sameAs": [
+          "https://github.com/yonaskelem-dev",
+          "https://www.linkedin.com/in/yonas-kelem-a64008361/"
+        ]
+      }
+    </script>
   </head>
+
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
+```
