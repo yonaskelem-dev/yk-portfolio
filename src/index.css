@@ -5,6 +5,7 @@
 @theme {
   --color-coral: #f05f57;
   --font-display: "Gelasio", Georgia, serif;
+  
   --animate-trace: trace 1.4s linear infinite;
   @keyframes trace {
     to {

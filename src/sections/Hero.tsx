@@ -44,7 +44,7 @@ function Hero() {
           <div>
             <h1 className="font-display text-4xl font-bold text-heading xl:text-5xl">
               <RevealText text={`I’m ${profile.name}`} delay={2.2} />
-              <span className="block text-coral">
+              <span className="block text-[#15803d] dark:text-[#6ee7a0]">
                 {role}
                 <span className="animate-pulse">|</span>
               </span>
@@ -56,7 +56,7 @@ function Hero() {
               <Magnetic>
                 <a
                   href={profile.cvUrl}
-                  className="block rounded-lg bg-coral px-7 py-3 text-white"
+                  className="block rounded-lg bg-[#1e2a78] px-7 py-3 text-white transition hover:bg-[#2a3a9e] dark:bg-[#3b4cca] dark:hover:bg-[#4a5ce0]"
                 >
                   Download CV
                 </a>
@@ -64,7 +64,7 @@ function Hero() {
               <Magnetic>
                 <a
                   href="#projects"
-                  className="block rounded-lg border-2 border-heading px-7 py-3 text-heading"
+                  className="block rounded-lg border-2 border-[#1e2a78] px-7 py-3 text-[#1e2a78] transition hover:bg-[#1e2a78]/10 dark:border-white/70 dark:text-white dark:hover:bg-white/10"
                 >
                   View projects
                 </a>
