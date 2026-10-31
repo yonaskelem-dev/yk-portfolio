@@ -56,6 +56,7 @@ function Hero() {
               <Magnetic>
                 <a
                   href={profile.cvUrl}
+                  download="Yonas-Kelem-CV.pdf"
                   className="block rounded-lg bg-[#1e2a78] px-7 py-3 text-white transition hover:bg-[#2a3a9e] dark:bg-[#3b4cca] dark:hover:bg-[#4a5ce0]"
                 >
                   Download CV
